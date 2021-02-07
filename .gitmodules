@@ -1,6 +1,0 @@
-[submodule "themes/raditian-free-theme"]
-	path = themes/raditian-free-theme
-	url = https://github.com/radity/raditian-free-hugo-theme.git
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/budparr/gohugo-theme-ananke.git
