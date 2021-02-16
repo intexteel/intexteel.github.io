@@ -1,3 +1,12 @@
+var videos = document.getElementsByTagName("iframe");
+for(var i=0; i<videos.length; i++)
+{
+  var video = videos[i];
+  video.id = "video-"+i;
+  video.setAttribute('data-src', video.src + "&version=3&enablejsapi=1&html5=1");
+  video.src = '';
+}
+
 // Inject YouTube API script
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
@@ -8,7 +17,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var players = {}
 var playersLoaded = {}
 var playersVisible = {}
-var videos = document.getElementsByTagName("iframe");
 console.log("videos found: " + videos.length);
 
 players['test'] = 'testp';
