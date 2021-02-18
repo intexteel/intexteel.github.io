@@ -44,7 +44,7 @@ var observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: [1] }
+  { threshold: [0.4] }
 );
 
 // this function gets called when API is ready to use
